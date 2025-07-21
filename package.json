@@ -1,0 +1,35 @@
+{
+  "name": "discoverly.dev",
+  "version": "1.0.0",
+  "description": "A product discovery tool website built with Eleventy and Tailwind CSS",
+  "scripts": {
+    "dev": "run-p dev:*",
+    "dev:eleventy": "eleventy --serve --quiet",
+    "dev:css": "tailwindcss -i ./src/assets/css/main.css -o ./_site/assets/css/style.css --watch",
+    "dev:js": "esbuild src/assets/js/main.js --bundle --outfile=_site/assets/js/bundle.js --watch",
+    "build": "run-s clean build:*",
+    "build:eleventy": "eleventy",
+    "build:css": "tailwindcss -i ./src/assets/css/main.css -o ./_site/assets/css/style.css --minify",
+    "build:js": "esbuild src/assets/js/main.js --bundle --outfile=_site/assets/js/bundle.js --minify",
+    "clean": "rm -rf _site"
+  },
+  "keywords": [
+    "eleventy",
+    "static-site",
+    "product-discovery"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "autoprefixer": "^10.4.21",
+    "esbuild": "^0.25.8",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.0.0"
+  },
+  "dependencies": {
+    "alpinejs": "^3.14.9",
+    "lucide": "^0.525.0"
+  }
+}

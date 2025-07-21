@@ -1,0 +1,61 @@
+---
+layout: layouts/base.hbs
+title: Home
+description: Discover products that matter with Discoverly
+---
+
+<section class="relative overflow-hidden bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                Welcome to Discoverly
+            </h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+                A powerful product discovery tool to help you find and analyze the products that matter most.
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="#" class="rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    Get started
+                </a>
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
+                    Learn more <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-gray-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900">Features</h2>
+            <p class="mt-4 text-lg text-gray-600">Everything you need for product discovery</p>
+        </div>
+        
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div class="bg-white p-8 rounded-lg shadow-sm" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                <div class="text-indigo-600 mb-4" :class="{ 'transform scale-110': hover }" style="transition: transform 0.2s">
+                    {{{lucide "search" size=40}}}
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Smart Search</h3>
+                <p class="text-gray-600">Find products quickly with our intelligent search algorithm.</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                <div class="text-indigo-600 mb-4" :class="{ 'transform scale-110': hover }" style="transition: transform 0.2s">
+                    {{{lucide "trending-up" size=40}}}
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Analytics</h3>
+                <p class="text-gray-600">Track performance and trends with detailed analytics.</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                <div class="text-indigo-600 mb-4" :class="{ 'transform scale-110': hover }" style="transition: transform 0.2s">
+                    {{{lucide "users" size=40}}}
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Collaboration</h3>
+                <p class="text-gray-600">Work together with your team to discover the best products.</p>
+            </div>
+        </div>
+    </div>
+</section>

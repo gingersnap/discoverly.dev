@@ -3,6 +3,7 @@ node_modules/
 vendor/
 
 # Build output
+_site/
 dist/
 build/
 *.log
@@ -21,3 +22,6 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# Eleventy cache
+.cache/

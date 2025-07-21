@@ -1,0 +1,44 @@
+<header class="bg-white shadow-sm" x-data="{ mobileMenuOpen: false }">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+            <div class="flex items-center">
+                <a href="/" class="text-2xl font-bold text-indigo-600">
+                    Discoverly
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <a href="/" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600">Home</a>
+                    <a href="/about" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600">About</a>
+                    <a href="/features" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600">Features</a>
+                    <a href="/contact" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button @click="mobileMenuOpen = !mobileMenuOpen" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-indigo-600 focus:outline-none">
+                    <span class="sr-only">Open main menu</span>
+                    <div x-show="!mobileMenuOpen">
+                        {{{lucide "menu" size=24}}}
+                    </div>
+                    <div x-show="mobileMenuOpen" x-cloak>
+                        {{{lucide "x" size=24}}}
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile menu -->
+    <div x-show="mobileMenuOpen" x-cloak class="md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="/" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">Home</a>
+            <a href="/about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">About</a>
+            <a href="/features" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">Features</a>
+            <a href="/contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">Contact</a>
+        </div>
+    </div>
+</header>
