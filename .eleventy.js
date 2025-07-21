@@ -1,10 +1,13 @@
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-const handlebarsPlugin = require("@11ty/eleventy-plugin-handlebars");
-const fs = require('fs');
-const path = require('path');
-const handlebars = require('handlebars');
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+import handlebarsPlugin from "@11ty/eleventy-plugin-handlebars";
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import handlebars from 'handlebars';
 
-module.exports = function(eleventyConfig) {
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
+
+export default function(eleventyConfig) {
   // Register partials from subdirectories manually
   const partialsDir = path.join(__dirname, 'src/_includes/partials');
   
@@ -58,4 +61,4 @@ module.exports = function(eleventyConfig) {
     markdownTemplateEngine: "hbs",
     htmlTemplateEngine: "hbs"
   };
-};
+}
