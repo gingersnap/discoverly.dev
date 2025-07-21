@@ -58,7 +58,7 @@ export default function(eleventyConfig) {
       includes: "_includes",
       data: "_data"
     },
-    markdownTemplateEngine: "hbs",
-    htmlTemplateEngine: "hbs"
+    markdownTemplateEngine: false,  // Process markdown as pure markdown
+    htmlTemplateEngine: "hbs"      // Keep Handlebars for HTML/HBS files
   };
 }

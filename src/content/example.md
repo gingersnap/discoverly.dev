@@ -34,7 +34,7 @@ console.log(message);
 
 ### Icon Example
 
-You can use Lucide icons in your markdown too: {{{lucide "star" 20}}}
+Markdown content is processed as pure markdown without template syntax.
 
 ---
 
