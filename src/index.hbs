@@ -1,60 +1,370 @@
 ---
 layout: layouts/base.hbs
-title: Home
-description: Discover products that matter with Discoverly
+title: Turn Customer Conversations into Visual Discovery Maps
+description: The simplest way to practice continuous discovery. No teams, no permissions, no IT approval—just you and your insights.
 ---
 
-<section class="relative overflow-hidden bg-white">
-    <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-gradient-to-b from-orange-50 to-white py-16 lg:py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Welcome to Discoverly
+            
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+                A simple way to organize<br>
+                <span class="text-orange-600">customer feedback</span>
             </h1>
-            <p class="mt-6 text-lg leading-8 text-gray-600">
-                A powerful product discovery tool to help you find and analyze the products that matter most.
+            <p class="mt-6 text-lg lg:text-xl leading-8 text-gray-600 max-w-2xl mx-auto">
+                Drag and drop insights to see patterns. Like sticky notes, but digital.
             </p>
+            
+            <!-- Simple trust signals -->
+            <div class="mt-8 flex items-center justify-center gap-6 text-sm text-gray-500">
+                <span>Free forever</span>
+                <span>•</span>
+                <span>No credit card</span>
+                <span>•</span>
+                <span>5 minute setup</span>
+            </div>
+            
             <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="#" class="rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    Get started
+                <a href="#" class="rounded-md bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-700 transition-colors">
+                    Try it free
                 </a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
-                    Learn more <span aria-hidden="true">→</span>
+                <a href="#" class="text-base font-medium text-gray-700 hover:text-orange-600 transition-colors">
+                    See how it works {{lucide "arrow-right" 16 class="inline ml-1"}}
                 </a>
+            </div>
+        </div>
+        
+        <!-- Hero Visual -->
+        <div class="mt-16 lg:mt-20 mx-auto max-w-4xl">
+            <img src="/assets/images/undraw_board.svg" alt="Visual board for organizing feedback" class="w-full h-auto" />
+        </div>
+    </div>
+</section>
+
+<!-- Problem Statement Section -->
+<section class="py-16 lg:py-20 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">The problem with current tools</h2>
+        </div>
+        
+        
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div class="text-center">
+                <div class="mx-auto mb-6 w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center">
+                    {{lucide "clock" 40 class="text-gray-600"}}
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Meeting notes get lost</h3>
+                <p class="text-gray-600">Important details slip through the cracks</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="mx-auto mb-6 w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center">
+                    {{lucide "search" 40 class="text-gray-600"}}
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Too many spreadsheets</h3>
+                <p class="text-gray-600">Insights scattered across multiple files</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="mx-auto mb-6 w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center">
+                    {{lucide "users" 40 class="text-gray-600"}}
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Tools built for teams</h3>
+                <p class="text-gray-600">Most tools assume you have a whole team</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-24 bg-gray-50">
+<!-- Solution Overview -->
+<section class="py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-gray-900">Features</h2>
-            <p class="mt-4 text-lg text-gray-600">Everything you need for product discovery</p>
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">How Discoverly helps</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Create visual maps of customer feedback to spot patterns easily.</p>
         </div>
         
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div class="bg-white p-8 rounded-lg shadow-sm" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <div class="text-indigo-600 mb-4" :class="{ 'transform scale-110': hover }" style="transition: transform 0.2s">
-                    {{{lucide "search" 40}}}
+        
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+            <div class="text-center">
+                <div class="mb-4 text-orange-600">
+                    {{lucide "zap" 40 class="mx-auto"}}
                 </div>
-                <h3 class="text-xl font-semibold mb-2">Smart Search</h3>
-                <p class="text-gray-600">Find products quickly with our intelligent search algorithm.</p>
+                <h3 class="text-xl font-semibold mb-3">Capture in 30 seconds</h3>
+                <p class="text-gray-600">One click during calls. Never lose an insight again.</p>
             </div>
             
-            <div class="bg-white p-8 rounded-lg shadow-sm" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <div class="text-indigo-600 mb-4" :class="{ 'transform scale-110': hover }" style="transition: transform 0.2s">
-                    {{{lucide "trending-up" 40}}}
+            <div class="text-center">
+                <div class="mb-4 text-teal-600">
+                    {{lucide "eye" 40 class="mx-auto"}}
                 </div>
-                <h3 class="text-xl font-semibold mb-2">Analytics</h3>
-                <p class="text-gray-600">Track performance and trends with detailed analytics.</p>
+                <h3 class="text-xl font-semibold mb-3">See patterns instantly</h3>
+                <p class="text-gray-600">Visual maps reveal what 47 spreadsheet tabs can't.</p>
             </div>
             
-            <div class="bg-white p-8 rounded-lg shadow-sm" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <div class="text-indigo-600 mb-4" :class="{ 'transform scale-110': hover }" style="transition: transform 0.2s">
-                    {{{lucide "users" 40}}}
+            <div class="text-center">
+                <div class="mb-4 text-green-600">
+                    {{lucide "share-2" 40 class="mx-auto"}}
                 </div>
-                <h3 class="text-xl font-semibold mb-2">Collaboration</h3>
-                <p class="text-gray-600">Work together with your team to discover the best products.</p>
+                <h3 class="text-xl font-semibold mb-3">Share in 1 click</h3>
+                <p class="text-gray-600">Stakeholders see your insights. No login required.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Results Section -->
+<section class="py-12 bg-orange-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-4xl font-bold text-orange-600">Fast</p>
+                <p class="mt-2 text-gray-600">5 minutes to start</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-orange-600">Simple</p>
+                <p class="mt-2 text-gray-600">Drag and drop interface</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-orange-600">Visual</p>
+                <p class="mt-2 text-gray-600">See patterns instantly</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-orange-600">Free</p>
+                <p class="mt-2 text-gray-600">No credit card needed</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-16 lg:py-20 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">Simple by design</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+            <div class="bg-gray-50 p-8 rounded-xl">
+                <div class="text-orange-600 mb-4">
+                    {{lucide "save" 40}}
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Capture</h3>
+                <p class="text-gray-600">One-click during calls.</p>
+            </div>
+            
+            <div class="bg-gray-50 p-8 rounded-xl">
+                <div class="text-teal-600 mb-4">
+                    {{lucide "git-branch" 40}}
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Connect</h3>
+                <p class="text-gray-600">Drag to build OSTs.</p>
+            </div>
+            
+            <div class="bg-gray-50 p-8 rounded-xl">
+                <div class="text-green-600 mb-4">
+                    {{lucide "share-2" 40}}
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Share</h3>
+                <p class="text-gray-600">One link. No logins.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mini Case Study -->
+<section class="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl shadow-soft p-8 lg:p-12">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">A typical day: Before vs. After</h2>
+            </div>
+            
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-semibold text-red-600 mb-4 flex items-center">
+                        {{lucide "x-circle" 20 class="mr-2"}}
+                        Before (3 hours)
+                    </h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">•</span>
+                            <span>9am: Customer call, scribbled notes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">•</span>
+                            <span>11am: "Wait, what did they say about onboarding?"</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">•</span>
+                            <span>2pm: Creating spreadsheet #48</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">•</span>
+                            <span>4pm: Still organizing feedback</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">•</span>
+                            <span>5pm: "I'll synthesize this tomorrow..."</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-green-600 mb-4 flex items-center">
+                        {{lucide "check-circle" 20 class="mr-2"}}
+                        After (30 minutes)
+                    </h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>9am: Click to capture during call</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>9:30am: Drag insights into OST</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>9:35am: Pattern emerges: "3 mentions of onboarding pain"</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>9:40am: Share link with team</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Done. Actually done.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <p class="text-lg font-medium text-gray-900">
+                    "I captured 3x more insights and saved 2.5 hours. Every. Single. Day."
+                </p>
+                <p class="mt-2 text-sm text-gray-600">- Sarah K., Senior PM at a Y Combinator startup</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Comparison Section -->
+<section class="py-16 lg:py-20 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">Compare with other tools</h2>
+        </div>
+        
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="font-semibold text-gray-900 mb-4">Jira</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center text-gray-600">
+                            {{lucide "clock" 16 class="mr-2 text-gray-400"}}
+                            <span>Complex setup</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            {{lucide "users" 16 class="mr-2 text-gray-400"}}
+                            <span>Team required</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            {{lucide "dollar-sign" 16 class="mr-2 text-gray-400"}}
+                            <span>$10+/user</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="font-semibold text-gray-900 mb-4">Productboard</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center text-gray-600">
+                            {{lucide "clock" 16 class="mr-2 text-gray-400"}}
+                            <span>Weeks to setup</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            {{lucide "users" 16 class="mr-2 text-gray-400"}}
+                            <span>5 seat minimum</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            {{lucide "dollar-sign" 16 class="mr-2 text-gray-400"}}
+                            <span>$90/user</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-orange-50 rounded-xl p-6 border-2 border-orange-200">
+                    <h3 class="font-semibold text-orange-600 mb-4">Discoverly</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center text-gray-700">
+                            {{lucide "zap" 16 class="mr-2 text-orange-500"}}
+                            <span class="font-medium">5 minutes</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            {{lucide "user" 16 class="mr-2 text-orange-500"}}
+                            <span class="font-medium">Works solo</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            {{lucide "gift" 16 class="mr-2 text-orange-500"}}
+                            <span class="font-medium">Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Comparison Illustration -->
+        <div class="mt-16 max-w-3xl mx-auto">
+            {{illustration "comparison" class="w-full h-auto" width="600"}}
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimonial Section -->
+<section class="py-12 bg-orange-50">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <blockquote class="text-xl lg:text-2xl font-medium text-gray-900">
+            "Finally, a tool that just works. No setup, no team needed."
+        </blockquote>
+        <p class="mt-4 text-gray-600">
+            <span class="font-semibold">Sarah K.</span>, Product Manager
+        </p>
+    </div>
+</section>
+
+
+<!-- Final CTA Section -->
+<section class="py-20 lg:py-24 bg-gradient-to-br from-orange-600 to-orange-700 text-white">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Ready to organize your customer feedback?</h2>
+        
+        <p class="text-xl mb-8 opacity-90">Start creating visual maps today.</p>
+        
+        <a href="#" class="inline-block rounded-md bg-white px-10 py-5 text-lg font-semibold text-orange-600 shadow-lg hover:shadow-xl transition-all">
+            Get started free
+        </a>
+        
+        <div class="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm opacity-90">
+            <div class="flex items-center">
+                {{lucide "shield" 20 class="mr-2"}}
+                Your data never leaves your browser
+            </div>
+            <div class="flex items-center">
+                {{lucide "zap" 20 class="mr-2"}}
+                Cancel anytime in 1 click
+            </div>
+            <div class="flex items-center">
+                {{lucide "heart" 20 class="mr-2"}}
+                Built by PMs for PMs
             </div>
         </div>
     </div>

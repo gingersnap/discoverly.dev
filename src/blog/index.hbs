@@ -1,0 +1,194 @@
+---
+layout: layouts/base.hbs
+title: Blog - Learn Continuous Discovery
+description: Practical guides and insights for product managers practicing continuous discovery
+---
+
+<!-- Blog Header -->
+<section class="bg-gradient-to-b from-orange-50 to-white py-16 lg:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-orange-100 rounded-full mb-6">
+                {{lucide "book-open" 40 class="text-orange-600"}}
+            </div>
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                Learn Continuous Discovery
+            </h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                Practical guides from product managers, for product managers. Master visual discovery without the enterprise complexity.
+            </p>
+        </div>
+        
+        <!-- Blog Header Illustration -->
+        <div class="mt-12 max-w-md mx-auto">
+            {{illustration "knowledge" class="w-full h-auto" width="400"}}
+        </div>
+    </div>
+</section>
+
+<!-- Blog Categories -->
+<section class="py-8 bg-white border-b">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap justify-center gap-4">
+            <button class="px-4 py-2 text-sm font-medium text-white bg-orange-600 rounded-full hover:bg-orange-700 transition-colors">All Posts</button>
+            <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">Getting Started</button>
+            <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">Discovery Methods</button>
+            <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">Customer Stories</button>
+            <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">Tips & Tricks</button>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Posts -->
+<section class="py-16 lg:py-20 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Blog Post 1 -->
+            <article class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="text-sm font-medium text-orange-600 bg-orange-50 px-3 py-1 rounded-full">Getting Started</span>
+                        <span class="text-sm text-gray-500 ml-3">Dec 15, 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-3">
+                        <a href="/blog/first-ost-10-minutes" class="hover:text-orange-600 transition-colors">Your First Opportunity Solution Tree in 10 Minutes</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4">Get started with visual discovery mapping using our step-by-step guide. No experience required.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">5 min read</span>
+                        <a href="/blog/first-ost-10-minutes" class="text-orange-600 font-medium hover:text-orange-700 transition-colors inline-flex items-center">
+                            Read more {{lucide "arrow-right" 16 class="ml-1"}}
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Blog Post 2 -->
+            <article class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="text-sm font-medium text-teal-600 bg-teal-50 px-3 py-1 rounded-full">Discovery Methods</span>
+                        <span class="text-sm text-gray-500 ml-3">Dec 12, 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-3">
+                        <a href="/blog/visual-beats-spreadsheets" class="hover:text-orange-600 transition-colors">Why Visual Discovery Beats Spreadsheets Every Time</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4">See how spatial thinking reveals patterns that lists and tables hide. Real examples inside.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">7 min read</span>
+                        <a href="/blog/visual-beats-spreadsheets" class="text-orange-600 font-medium hover:text-orange-700 transition-colors inline-flex items-center">
+                            Read more {{lucide "arrow-right" 16 class="ml-1"}}
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Blog Post 3 -->
+            <article class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="text-sm font-medium text-green-600 bg-green-50 px-3 py-1 rounded-full">Tips & Tricks</span>
+                        <span class="text-sm text-gray-500 ml-3">Dec 10, 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-3">
+                        <a href="/blog/30-second-insight-capture" class="hover:text-orange-600 transition-colors">The 30-Second Insight Capture Method</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4">Never lose another customer insight with this simple capture workflow that actually works.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">4 min read</span>
+                        <a href="/blog/30-second-insight-capture" class="text-orange-600 font-medium hover:text-orange-700 transition-colors inline-flex items-center">
+                            Read more {{lucide "arrow-right" 16 class="ml-1"}}
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Blog Post 4 -->
+            <article class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="text-sm font-medium text-purple-600 bg-purple-50 px-3 py-1 rounded-full">Customer Stories</span>
+                        <span class="text-sm text-gray-500 ml-3">Dec 8, 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-3">
+                        <a href="/blog/why-built-for-one" class="hover:text-orange-600 transition-colors">Why We Built Discoverly for One</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4">The story behind our individual-first approach and why enterprise tools miss the mark.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">6 min read</span>
+                        <a href="/blog/why-built-for-one" class="text-orange-600 font-medium hover:text-orange-700 transition-colors inline-flex items-center">
+                            Read more {{lucide "arrow-right" 16 class="ml-1"}}
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Blog Post 5 -->
+            <article class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="text-sm font-medium text-orange-600 bg-orange-50 px-3 py-1 rounded-full">Getting Started</span>
+                        <span class="text-sm text-gray-500 ml-3">Dec 5, 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-3">
+                        <a href="/blog/spreadsheet-to-visual-map" class="hover:text-orange-600 transition-colors">From Spreadsheet to Visual Map: A PM's Journey</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4">Follow Sarah's transformation from Excel chaos to visual clarity in her discovery process.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">8 min read</span>
+                        <a href="/blog/spreadsheet-to-visual-map" class="text-orange-600 font-medium hover:text-orange-700 transition-colors inline-flex items-center">
+                            Read more {{lucide "arrow-right" 16 class="ml-1"}}
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Blog Post 6 -->
+            <article class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="text-sm font-medium text-teal-600 bg-teal-50 px-3 py-1 rounded-full">Discovery Methods</span>
+                        <span class="text-sm text-gray-500 ml-3">Dec 3, 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-3">
+                        <a href="/blog/5-minute-discovery-habit" class="hover:text-orange-600 transition-colors">The 5-Minute Discovery Habit</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4">Build a sustainable discovery practice that fits into your daily workflow, not around it.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">5 min read</span>
+                        <a href="/blog/5-minute-discovery-habit" class="text-orange-600 font-medium hover:text-orange-700 transition-colors inline-flex items-center">
+                            Read more {{lucide "arrow-right" 16 class="ml-1"}}
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+        
+        <!-- Newsletter CTA -->
+        <div class="mt-16 bg-gradient-to-br from-orange-50 to-teal-50 rounded-2xl p-8 lg:p-12 text-center relative overflow-hidden">
+            <div class="relative z-10">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full mb-6 shadow-lg">
+                    {{lucide "mail" 32 class="text-orange-600"}}
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Get Discovery Tips Weekly</h3>
+                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                    Join 2,000+ product managers learning visual discovery techniques that actually work.
+                </p>
+                <form class="max-w-md mx-auto flex gap-4">
+                    <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none">
+                    <button type="submit" class="px-6 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition-colors">
+                        Subscribe
+                    </button>
+                </form>
+                <p class="text-sm text-gray-500 mt-4">No spam. Unsubscribe anytime.</p>
+            </div>
+            
+            <!-- Background Pattern -->
+            <div class="absolute top-0 right-0 -mt-8 -mr-8 opacity-10">
+                {{lucide "send" 200 class="text-orange-600"}}
+            </div>
+        </div>
+    </div>
+</section>

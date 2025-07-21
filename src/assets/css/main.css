@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+/* Custom styles for Discoverly */
+@layer utilities {
+  /* Animation for hero section */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Custom shadow */
+  .shadow-soft {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+}
