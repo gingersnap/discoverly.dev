@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -7,6 +8,10 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url))
 export default defineConfig({
   // Set root to src directory where our assets are
   root: 'src',
+  
+  plugins: [
+    tailwindcss(),
+  ],
   
   // Build configuration
   build: {
@@ -18,7 +23,8 @@ export default defineConfig({
     manifest: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'src/assets/js/main.js')
+        main: resolve(__dirname, 'src/assets/js/main.js'),
+        styles: resolve(__dirname, 'src/assets/css/main.css')
       },
       output: {
         entryFileNames: 'js/[name].js',
