@@ -10,7 +10,8 @@
     "build": "run-s clean build:*",
     "build:eleventy": "eleventy",
     "build:vite": "vite build",
-    "clean": "rm -rf _site"
+    "clean": "rm -rf _site",
+    "preview": "run-s build && eleventy --serve"
   },
   "keywords": [
     "eleventy",

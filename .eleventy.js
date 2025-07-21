@@ -45,7 +45,6 @@ export default function(eleventyConfig) {
   
   // Watch CSS files for changes
   eleventyConfig.addWatchTarget("src/assets/css/");
-  eleventyConfig.addWatchTarget("tailwind.config.js");
 
   // Set template formats
   eleventyConfig.setTemplateFormats(["html", "md", "hbs", "njk"]);

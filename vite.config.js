@@ -19,8 +19,8 @@ export default defineConfig({
     outDir: '../_site/assets',
     // Don't empty outDir since Eleventy manages it
     emptyOutDir: false,
-    // Generate manifest for asset references
-    manifest: true,
+    // No need for manifest since we use fixed output names
+    manifest: false,
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/assets/js/main.js'),
@@ -30,8 +30,8 @@ export default defineConfig({
         entryFileNames: 'js/[name].js',
         chunkFileNames: 'js/[name]-[hash].js',
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name.endsWith('.css')) {
-            return 'css/[name][extname]'
+          if (assetInfo.name?.endsWith('.css')) {
+            return 'css/style[extname]'
           }
           return 'assets/[name]-[hash][extname]'
         }
