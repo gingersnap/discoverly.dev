@@ -1,5 +1,145 @@
 @import "tailwindcss";
 
+/* Import Poppins font */
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/poppins/800.css";
+
+/* Discoverly Theme Configuration */
+@theme {
+  /* Brand color shades (Purple) */
+  --color-brand-50: var(--color-purple-50);
+  --color-brand-100: var(--color-purple-100);
+  --color-brand-200: var(--color-purple-200);
+  --color-brand-300: var(--color-purple-300);
+  --color-brand-400: var(--color-purple-400);
+  --color-brand-500: var(--color-purple-500);
+  --color-brand-600: var(--color-purple-600);
+  --color-brand-700: var(--color-purple-700);
+  --color-brand-800: var(--color-purple-800);
+  --color-brand-900: var(--color-purple-900);
+  --color-brand-950: var(--color-purple-950);
+  
+  /* Accent color shades (Orange) */
+  --color-accent-50: var(--color-orange-50);
+  --color-accent-100: var(--color-orange-100);
+  --color-accent-200: var(--color-orange-200);
+  --color-accent-300: var(--color-orange-300);
+  --color-accent-400: var(--color-orange-400);
+  --color-accent-500: var(--color-orange-500);
+  --color-accent-600: var(--color-orange-600);
+  --color-accent-700: var(--color-orange-700);
+  --color-accent-800: var(--color-orange-800);
+  --color-accent-900: var(--color-orange-900);
+  --color-accent-950: var(--color-orange-950);
+  
+  /* Support color shades (Teal) */
+  --color-support-50: var(--color-teal-50);
+  --color-support-100: var(--color-teal-100);
+  --color-support-200: var(--color-teal-200);
+  --color-support-300: var(--color-teal-300);
+  --color-support-400: var(--color-teal-400);
+  --color-support-500: var(--color-teal-500);
+  --color-support-600: var(--color-teal-600);
+  --color-support-700: var(--color-teal-700);
+  --color-support-800: var(--color-teal-800);
+  --color-support-900: var(--color-teal-900);
+  --color-support-950: var(--color-teal-950);
+  
+  /* CTA color shades (Green) */
+  --color-cta-50: var(--color-green-50);
+  --color-cta-100: var(--color-green-100);
+  --color-cta-200: var(--color-green-200);
+  --color-cta-300: var(--color-green-300);
+  --color-cta-400: var(--color-green-400);
+  --color-cta-500: var(--color-green-500);
+  --color-cta-600: var(--color-green-600);
+  --color-cta-700: var(--color-green-700);
+  --color-cta-800: var(--color-green-800);
+  --color-cta-900: var(--color-green-900);
+  --color-cta-950: var(--color-green-950);
+  
+  /* Success color shades (Emerald) */
+  --color-success-50: var(--color-emerald-50);
+  --color-success-100: var(--color-emerald-100);
+  --color-success-200: var(--color-emerald-200);
+  --color-success-300: var(--color-emerald-300);
+  --color-success-400: var(--color-emerald-400);
+  --color-success-500: var(--color-emerald-500);
+  --color-success-600: var(--color-emerald-600);
+  --color-success-700: var(--color-emerald-700);
+  --color-success-800: var(--color-emerald-800);
+  --color-success-900: var(--color-emerald-900);
+  --color-success-950: var(--color-emerald-950);
+  
+  /* Danger color shades (Red) */
+  --color-danger-50: var(--color-red-50);
+  --color-danger-100: var(--color-red-100);
+  --color-danger-200: var(--color-red-200);
+  --color-danger-300: var(--color-red-300);
+  --color-danger-400: var(--color-red-400);
+  --color-danger-500: var(--color-red-500);
+  --color-danger-600: var(--color-red-600);
+  --color-danger-700: var(--color-red-700);
+  --color-danger-800: var(--color-red-800);
+  --color-danger-900: var(--color-red-900);
+  --color-danger-950: var(--color-red-950);
+  
+  /* Semantic color tokens for convenience */
+  --color-brand: var(--color-brand-600);
+  --color-brand-hover: var(--color-brand-700);
+  --color-brand-focus: var(--color-brand-500);
+  --color-brand-light: var(--color-brand-50);
+  --color-brand-muted: var(--color-brand-300);
+  
+  --color-accent: var(--color-accent-600);
+  --color-accent-hover: var(--color-accent-700);
+  --color-accent-focus: var(--color-accent-500);
+  --color-accent-light: var(--color-accent-50);
+  --color-accent-muted: var(--color-accent-300);
+  
+  --color-support: var(--color-support-600);
+  --color-support-hover: var(--color-support-700);
+  --color-support-focus: var(--color-support-500);
+  --color-support-light: var(--color-support-50);
+  --color-support-muted: var(--color-support-300);
+  
+  --color-cta: var(--color-cta-600);
+  --color-cta-hover: var(--color-cta-700);
+  --color-cta-focus: var(--color-cta-500);
+  --color-cta-light: var(--color-cta-50);
+  --color-cta-muted: var(--color-cta-300);
+  
+  --color-success: var(--color-success-600);
+  --color-success-hover: var(--color-success-700);
+  --color-success-focus: var(--color-success-500);
+  --color-success-light: var(--color-success-50);
+  --color-success-muted: var(--color-success-300);
+  
+  --color-danger: var(--color-danger-600);
+  --color-danger-hover: var(--color-danger-700);
+  --color-danger-focus: var(--color-danger-500);
+  --color-danger-light: var(--color-danger-50);
+  --color-danger-muted: var(--color-danger-300);
+  
+  /* Font Family */
+  --font-family-sans: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-family-sans);
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+  }
+}
+
 /* Custom styles for Discoverly */
 @layer utilities {
   /* Animation for hero section */

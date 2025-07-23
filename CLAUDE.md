@@ -48,7 +48,7 @@ npm run dev:vite     # Run only Vite in watch mode
    ```handlebars
    {{lucide "menu" 24 class="w-6 h-6"}}
    {{lucide "arrow-right" 16 class="inline ml-1"}}
-   {{lucide "inbox" class="text-orange-500"}}  // size defaults to 24
+   {{lucide "inbox" class="text-brand-500"}}  // size defaults to 24
    ```
    
    **How it works**:
@@ -72,3 +72,9 @@ npm run dev:vite     # Run only Vite in watch mode
 - `.eleventy.js`: Eleventy config with Handlebars setup and icon helper
 - `vite.config.js`: Vite config with Tailwind CSS 4 plugin
 - Both configs work together to build the static site with optimized assets
+
+## Design Preferences
+
+- **Color Scheme**: 
+  - Prefer light-colored backgrounds
+  - Avoid dark backgrounds with white text
