@@ -25,25 +25,14 @@ export default function(eleventyConfig) {
   }
 
   // Register Handlebars helper for Lucide icons
-  handlebars.registerHelper("lucide", function(iconName, sizeOrOptions) {
-    // Handle different parameter scenarios
-    let size = 24;
-    let className = '';
-    let options;
-    
-    if (typeof sizeOrOptions === 'object') {
-      // Called with named parameters
-      options = sizeOrOptions;
-      size = options.hash.size || 24;
-      className = options.hash.class || '';
-    } else if (typeof sizeOrOptions === 'number') {
-      // Called with just size
-      size = sizeOrOptions;
-      options = arguments[2];
-      if (options && options.hash && options.hash.class) {
-        className = options.hash.class;
-      }
+  handlebars.registerHelper("lucide", function(iconName, size, options) {
+    // If size is not a number, it's the options object
+    if (typeof size !== 'number') {
+      options = size;
+      size = 24;
     }
+    
+    const className = options?.hash?.class || '';
     
     return new handlebars.SafeString(
       `<i data-lucide="${iconName}" width="${size}" height="${size}"${className ? ` class="${className}"` : ''}></i>`

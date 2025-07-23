@@ -9,7 +9,7 @@ readTime: 5 min
 
 # Your First Opportunity Solution Tree in 10 Minutes
 
-If you're tired of customer insights getting lost in spreadsheets and feeling overwhelmed by enterprise discovery tools, you're in the right place. Today, I'll show you how to create your first Opportunity Solution Tree (OST) in just 10 minutes using Discoverly.
+Remember that great insight from last week's customer call? Yeah, me neither. That's why I started using visual maps. Let me show you how to make your first Opportunity Solution Tree (OST) in just 10 minutes.
 
 ## What You'll Learn
 
@@ -20,7 +20,7 @@ If you're tired of customer insights getting lost in spreadsheets and feeling ov
 
 ## What Is an Opportunity Solution Tree?
 
-Created by Teresa Torres, an Opportunity Solution Tree is a visual map that connects:
+Teresa Torres came up with this brilliant idea: what if we could see how everything connects? An OST shows:
 - **Outcomes**: What you're trying to achieve
 - **Opportunities**: Customer needs and pain points
 - **Solutions**: Ideas to address those opportunities
@@ -95,7 +95,7 @@ No more guessing what customers said three weeks ago. No more losing insights in
 
 Your first tree is waiting. No credit card, no team approval, no 30-minute onboarding. Just you and your insights.
 
-[Start Your First Tree Free →](#)
+[Let's build your first tree →](#)
 
 ---
 
